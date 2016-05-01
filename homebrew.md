@@ -1,19 +1,42 @@
-# Homebrew
+# Homebrew, Cask e softwares instalados através deles
 
 ## Homebrew
 
-TODO
-
-## Homebrew Cask (extensão)
-
 ```
-brew install caskroom/cask/brew-cask
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-Refs:
-* http://caskroom.io/
-* https://github.com/caskroom/homebrew-cask/blob/master/USAGE.md
-* http://www.rocu.de/manage-your-mac-apps-with-homebrew-cask/
+* Ref(s):
+  * http://brew.sh
+
+### Docker
+
+```
+brew install docker
+```
+
+### Docker Machine
+
+```
+brew install docker-machine
+```
+
+## Cask
+
+```
+brew tap caskroom/cask
+```
+
+* Ref(s):
+  * http://caskroom.io/
+  * https://github.com/caskroom/homebrew-cask/blob/master/USAGE.md
+  * http://www.rocu.de/manage-your-mac-apps-with-homebrew-cask/
+
+### Spectacle
+
+```
+brew cask install spectacle
+```
 
 ### Virtualbox
 
@@ -25,10 +48,4 @@ brew cask install virtualbox virtualbox-extension-pack
 
 ```
 brew cask install vagrant
-```
-
-### Docker Machine
-
-```
-brew cask install docker-machine
 ```
