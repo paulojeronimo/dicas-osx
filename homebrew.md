@@ -49,3 +49,29 @@ brew cask install virtualbox virtualbox-extension-pack
 ```
 brew cask install vagrant
 ```
+
+### Java
+
+```
+brew cask install java
+```
+
+## Obtendo uma lista do que está instalado
+
+```
+list=brew-list.txt
+> $list
+cat > cmds <<'EOF'
+brew list
+brew cask list
+for f in $(brew cask list); do brew cask list $f; done
+EOF
+cat cmds | while read CMD
+do
+    echo -e "\n$ $CMD" >> $list
+    eval $CMD >> $list
+done
+rm cmds
+```
+
+Minha lista: [brew-list.txt](brew-list.txt)

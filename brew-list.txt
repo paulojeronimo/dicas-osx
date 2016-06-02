@@ -1,0 +1,51 @@
+
+$ brew list
+docker
+docker-machine
+openssl
+p7zip
+tree
+wget
+
+$ brew cask list
+firefox
+google-chrome
+java
+skype
+spectacle
+vagrant
+virtualbox
+virtualbox-extension-pack
+vlc
+
+$ for f in $(brew cask list); do brew cask list $f; done
+==> App Symlinks managed by brew-cask:
+~/'Applications/Firefox.app' -> '/opt/homebrew-cask/Caskroom/firefox/46.0/Firefox.app'
+==> Staged content:
+/opt/homebrew-cask/Caskroom/firefox/46.0 (112 files)
+==> App Symlinks managed by brew-cask:
+~/'Applications/Google Chrome.app' -> '/opt/homebrew-cask/Caskroom/google-chrome/latest/Google Chrome.app'
+==> Staged content:
+/opt/homebrew-cask/Caskroom/google-chrome/latest (354 files)
+==> Staged content:
+/opt/homebrew-cask/Caskroom/java/1.8.0_92-b14 (3 files)
+==> App Symlinks managed by brew-cask:
+~/'Applications/Skype.app' -> '/opt/homebrew-cask/Caskroom/skype/latest/Skype.app'
+==> Staged content:
+/opt/homebrew-cask/Caskroom/skype/latest (5034 files)
+==> App Symlinks managed by brew-cask:
+~/'Applications/Spectacle.app' -> '/opt/homebrew-cask/Caskroom/spectacle/1.0.3/Spectacle.app'
+==> Staged content:
+/opt/homebrew-cask/Caskroom/spectacle/1.0.3 (208 files)
+==> Staged content:
+/opt/homebrew-cask/Caskroom/vagrant/1.8.1 (7 files)
+==> Staged content:
+/opt/homebrew-cask/Caskroom/virtualbox/5.0.20-106931 (5 files)
+==> Staged content:
+/opt/homebrew-cask/Caskroom/virtualbox-extension-pack/5.0.20-106931 (1 files)
+==> App Symlinks managed by brew-cask:
+~/'Applications/VLC.app' -> '/opt/homebrew-cask/Caskroom/vlc/2.2.2/VLC.app'
+==> Binary Symlinks managed by brew-cask:
+'/usr/local/bin/vlc' -> '/opt/homebrew-cask/Caskroom/vlc/2.2.2/vlcwrapper'
+==> Staged content:
+/opt/homebrew-cask/Caskroom/vlc/2.2.2 (1656 files)
