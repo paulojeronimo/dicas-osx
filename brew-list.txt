@@ -1,17 +1,36 @@
-
 $ brew list
+dirmngr
 docker
 docker-machine
+ffmpeg
+gnupg
+gnupg2
+gpg-agent
+lame
+libassuan
+libevent
+libgcrypt
+libgpg-error
+libksba
+libusb
+libusb-compat
 openssl
 p7zip
+pinentry
+pth
+tmux
 tree
 wget
+x264
+xvid
 
 $ brew cask list
+dropbox
 firefox
 google-chrome
+google-drive
 java
-skype
+macvim
 spectacle
 vagrant
 virtualbox
@@ -19,33 +38,29 @@ virtualbox-extension-pack
 vlc
 
 $ for f in $(brew cask list); do brew cask list $f; done
-==> App Symlinks managed by brew-cask:
-~/'Applications/Firefox.app' -> '/opt/homebrew-cask/Caskroom/firefox/46.0/Firefox.app'
-==> Staged content:
-/opt/homebrew-cask/Caskroom/firefox/46.0 (112 files)
-==> App Symlinks managed by brew-cask:
-~/'Applications/Google Chrome.app' -> '/opt/homebrew-cask/Caskroom/google-chrome/latest/Google Chrome.app'
-==> Staged content:
-/opt/homebrew-cask/Caskroom/google-chrome/latest (354 files)
-==> Staged content:
-/opt/homebrew-cask/Caskroom/java/1.8.0_92-b14 (3 files)
-==> App Symlinks managed by brew-cask:
-~/'Applications/Skype.app' -> '/opt/homebrew-cask/Caskroom/skype/latest/Skype.app'
-==> Staged content:
-/opt/homebrew-cask/Caskroom/skype/latest (5034 files)
-==> App Symlinks managed by brew-cask:
-~/'Applications/Spectacle.app' -> '/opt/homebrew-cask/Caskroom/spectacle/1.0.3/Spectacle.app'
-==> Staged content:
-/opt/homebrew-cask/Caskroom/spectacle/1.0.3 (208 files)
-==> Staged content:
-/opt/homebrew-cask/Caskroom/vagrant/1.8.1 (7 files)
-==> Staged content:
-/opt/homebrew-cask/Caskroom/virtualbox/5.0.20-106931 (5 files)
-==> Staged content:
-/opt/homebrew-cask/Caskroom/virtualbox-extension-pack/5.0.20-106931 (1 files)
-==> App Symlinks managed by brew-cask:
-~/'Applications/VLC.app' -> '/opt/homebrew-cask/Caskroom/vlc/2.2.2/VLC.app'
-==> Binary Symlinks managed by brew-cask:
-'/usr/local/bin/vlc' -> '/opt/homebrew-cask/Caskroom/vlc/2.2.2/vlcwrapper'
-==> Staged content:
-/opt/homebrew-cask/Caskroom/vlc/2.2.2 (1656 files)
+==> Apps
+/Applications/Dropbox.app (760 files, 174.2M)
+==> Apps
+/Applications/Firefox.app (110 files, 188.5M)
+==> Apps
+/Applications/Google Chrome.app (193 files, 182.7M)
+==> Apps
+/Applications/Google Drive.app (643 files, 93.4M)
+==> Apps
+/Applications/MacVim.app (2,474 files, 39.3M)
+==> Binary Symlinks
+/usr/local/bin/gview -> /usr/local/Caskroom/macvim/8.0.121/mvim (2.3K)
+/usr/local/bin/gvim -> /usr/local/Caskroom/macvim/8.0.121/mvim (2.3K)
+/usr/local/bin/gvimdiff -> /usr/local/Caskroom/macvim/8.0.121/mvim (2.3K)
+/usr/local/bin/gvimex -> /usr/local/Caskroom/macvim/8.0.121/mvim (2.3K)
+/usr/local/bin/mview -> /usr/local/Caskroom/macvim/8.0.121/mvim (2.3K)
+/usr/local/bin/mvim -> /usr/local/Caskroom/macvim/8.0.121/mvim (2.3K)
+/usr/local/bin/mvimdiff -> /usr/local/Caskroom/macvim/8.0.121/mvim (2.3K)
+/usr/local/bin/mvimex -> /usr/local/Caskroom/macvim/8.0.121/mvim (2.3K)
+==> Apps
+/Applications/Spectacle.app (213 files, 4.2M)
+==> Apps
+/Applications/VLC.app (1,645 files, 114.3M)
+==> Binary Symlinks
+/usr/local/bin/vlc -> /usr/local/Caskroom/vlc/2.2.4/vlc.wrapper.sh (58B)
+

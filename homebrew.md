@@ -1,6 +1,6 @@
-# Homebrew, Cask e softwares instalados através deles
+# Instalação do Homebrew, do Cask e de outros softwares (através deles)
 
-## Homebrew
+## Instalação do Homebrew
 
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -8,6 +8,18 @@
 
 * Ref(s):
   * http://brew.sh
+
+## Instalação do Cask
+
+```
+brew tap caskroom/cask
+```
+
+* Ref(s):
+  * http://caskroom.io/
+  * https://github.com/caskroom/homebrew-cask/blob/master/USAGE.md
+
+## Instalação de softwares via brew e cask (exemplos)
 
 ### Docker
 
@@ -20,17 +32,6 @@ brew install docker
 ```
 brew install docker-machine
 ```
-
-## Cask
-
-```
-brew tap caskroom/cask
-```
-
-* Ref(s):
-  * http://caskroom.io/
-  * https://github.com/caskroom/homebrew-cask/blob/master/USAGE.md
-  * http://www.rocu.de/manage-your-mac-apps-with-homebrew-cask/
 
 ### Spectacle
 
@@ -56,22 +57,10 @@ brew cask install vagrant
 brew cask install java
 ```
 
-## Obtendo uma lista do que está instalado
+## Listagem do que está instalado
+
+Para gerar uma lista ([brew-list.txt](brew-list.txt)) dos softwares instalados via brew (e cask) execute:
 
 ```
-list=brew-list.txt
-> $list
-cat > cmds <<'EOF'
-brew list
-brew cask list
-for f in $(brew cask list); do brew cask list $f; done
-EOF
-cat cmds | while read CMD
-do
-    echo -e "\n$ $CMD" >> $list
-    eval $CMD >> $list
-done
-rm cmds
+curl -sSL https://raw.githubusercontent.com/paulojeronimo/dicas-osx/master/brew-list | bash
 ```
-
-Minha lista: [brew-list.txt](brew-list.txt)

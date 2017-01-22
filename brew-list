@@ -1,0 +1,21 @@
+#!/bin/bash
+
+list=`basename "$0"`
+[ "$list" = "bash" ] && list=brew-list
+list=$list.txt
+> $list
+cmds=/tmp/$list.cmds.$USER
+cat > $cmds <<'EOF'
+brew list
+brew cask list
+for f in $(brew cask list); do brew cask list $f; done
+EOF
+cat $cmds | while read CMD
+do
+  {
+    echo -e "$ $CMD"
+    eval $CMD
+    echo
+  } | tee -a $list
+done
+rm $cmds
