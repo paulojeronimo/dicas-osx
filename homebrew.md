@@ -21,6 +21,21 @@ brew tap caskroom/cask
 
 ## Instalação de softwares via brew e cask (exemplos)
 
+### Bash Completion
+
+```
+brew install bash-completion
+brew tap homebrew/completions
+cat << EOF | tee -a ~/.bash_profile
+if [ -f $(brew --prefix)/etc/bash_completion ]
+then
+  . $(brew --prefix)/etc/bash_completion
+fi
+EOF
+```
+* REf(s):
+  * http://davidalger.com/development/bash-completion-on-os-x-with-brew/
+
 ### Docker
 
 ```
