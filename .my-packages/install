@@ -1,0 +1,16 @@
+#!/bin/bash
+
+BASE_DIR=`cd "$(dirname "$0")"; pwd`
+cd "$BASE_DIR"
+
+# install brew packages
+while read package
+do
+  brew install $package
+done < brew
+
+# install brew cask packages
+while read package
+do
+  brew cask install $package
+done < brew-cask

@@ -74,7 +74,7 @@ brew cask install java
 
 ## Listagem do que está instalado
 
-Para gerar uma lista ([brew-list.txt](brew-list.txt)) dos softwares instalados via brew (e cask) execute:
+Para gerar uma lista ([brew-list.txt](.my-packages/brew-list.txt)) dos softwares instalados via brew (e cask) execute:
 
 ```
 curl -sSL https://raw.githubusercontent.com/paulojeronimo/dicas-osx/master/brew-list | bash
