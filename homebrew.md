@@ -42,6 +42,12 @@ EOF
 brew install docker
 ```
 
+### Docker Compose
+
+```
+brew install docker-compose
+```
+
 ### Docker Machine
 
 ```

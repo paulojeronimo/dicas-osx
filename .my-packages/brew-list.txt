@@ -1,66 +1,154 @@
 $ brew list
+adns
+ant
+asciidoc
+aspcud
+bash
+bash-completion
+bdw-gc
+boost
+bosh-cli
+camlp4
+ccache
+clasp
+clingo
+cmake
+cryptopp
 dirmngr
+docbook
 docker
+docker-compose
 docker-machine
+docker-machine-driver-xhyve
+dos2unix
+ethereum
 ffmpeg
+fontconfig
+freetype
+gd
+gdbm
+geth
+gettext
+gmp
+gnu-sed
+gnu-tar
 gnupg
-gnupg2
+gnutls
+go
 gpg-agent
+gradle
+graphviz
+gringo
+icu4c
+jpeg
+jq
 lame
 libassuan
+libev
 libevent
+libffi
 libgcrypt
 libgpg-error
+libidn2
 libksba
+libpng
+libtasn1
+libtiff
+libtool
+libunistring
 libusb
 libusb-compat
+libyaml
+lynx
+maven
+netcat
+nettle
+nexus
+nifi
+node
+npth
+ocaml
+ocamlbuild
+oniguruma
+opam
 openssl
+openssl@1.1
+p11-kit
 p7zip
+packer
+pandoc
+pcre
 pinentry
 pth
+pv
+python
+python3
+python@2
+qrencode
+readline
+rename
+ruby
+solidity
+sqlite
+sshpass
+tig
 tmux
 tree
+unrar
+w3m
+webp
 wget
 x264
+xhyve
 xvid
+xz
+yarn
+yq
+z3
+zsh
 
 $ brew cask list
+asciidocfx
 dropbox
 firefox
 google-chrome
 google-drive
 java
+kindlegen
 macvim
+minishift-beta
 spectacle
 vagrant
-virtualbox
-virtualbox-extension-pack
 vlc
 
 $ for f in $(brew cask list); do brew cask list $f; done
 ==> Apps
-/Applications/Dropbox.app (760 files, 174.2M)
+/Applications/Dropbox.app (517 files, 243.5MB)
 ==> Apps
-/Applications/Firefox.app (110 files, 188.5M)
+/Applications/Firefox.app (118 files, 157.6MB)
 ==> Apps
-/Applications/Google Chrome.app (193 files, 182.7M)
+/Applications/Google Chrome.app (308 files, 352.6MB)
 ==> Apps
-/Applications/Google Drive.app (643 files, 93.4M)
-==> Apps
-/Applications/MacVim.app (2,474 files, 39.3M)
+/Applications/Google Drive.app (2,736 files, 74.8MB)
 ==> Binary Symlinks
-/usr/local/bin/gview -> /usr/local/Caskroom/macvim/8.0.121/mvim (2.3K)
-/usr/local/bin/gvim -> /usr/local/Caskroom/macvim/8.0.121/mvim (2.3K)
-/usr/local/bin/gvimdiff -> /usr/local/Caskroom/macvim/8.0.121/mvim (2.3K)
-/usr/local/bin/gvimex -> /usr/local/Caskroom/macvim/8.0.121/mvim (2.3K)
-/usr/local/bin/mview -> /usr/local/Caskroom/macvim/8.0.121/mvim (2.3K)
-/usr/local/bin/mvim -> /usr/local/Caskroom/macvim/8.0.121/mvim (2.3K)
-/usr/local/bin/mvimdiff -> /usr/local/Caskroom/macvim/8.0.121/mvim (2.3K)
-/usr/local/bin/mvimex -> /usr/local/Caskroom/macvim/8.0.121/mvim (2.3K)
+/usr/local/bin/kindlegen -> /usr/local/Caskroom/kindlegen/2.9/kindlegen (27.9MB)
 ==> Apps
-/Applications/Spectacle.app (213 files, 4.2M)
+/Applications/MacVim.app (2,144 files, 35MB)
+==> Binary Symlinks
+/usr/local/bin/gview -> /usr/local/Caskroom/macvim/8.0.121/mvim (2.3KB)
+/usr/local/bin/gvim -> /usr/local/Caskroom/macvim/8.0.121/mvim (2.3KB)
+/usr/local/bin/gvimdiff -> /usr/local/Caskroom/macvim/8.0.121/mvim (2.3KB)
+/usr/local/bin/gvimex -> /usr/local/Caskroom/macvim/8.0.121/mvim (2.3KB)
+/usr/local/bin/mvim -> /usr/local/Caskroom/macvim/8.0.121/mvim (2.3KB)
+/usr/local/bin/mvimdiff -> /usr/local/Caskroom/macvim/8.0.121/mvim (2.3KB)
+/usr/local/bin/mvimex -> /usr/local/Caskroom/macvim/8.0.121/mvim (2.3KB)
+/usr/local/bin/mview -> /usr/local/Caskroom/macvim/8.0.121/mvim (2.3KB)
+==> Binary Symlinks
+/usr/local/bin/minishift -> /usr/local/Caskroom/minishift-beta/1.0.0-beta.4/minishift (35.7MB)
 ==> Apps
-/Applications/VLC.app (1,645 files, 114.3M)
+/Applications/Spectacle.app (213 files, 4.2MB)
+==> Apps
+/Applications/VLC.app (1,644 files, 112.1MB)
 ==> Binary Symlinks
 /usr/local/bin/vlc -> /usr/local/Caskroom/vlc/2.2.4/vlc.wrapper.sh (58B)
 

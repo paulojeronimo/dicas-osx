@@ -1,0 +1,9 @@
+= My installed Homebrew packages
+
+To save a list of my current installed packages I execute:
+
+----
+../brew-list
+----
+
+TODO: update script link:install[] to use link:brew-list.txt[] when it is necessary to reinstall my packages.
